@@ -72,8 +72,16 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <button
+                        <button 
+                            type="submit"
                             class="w-full sm:w-1/2 h-10 rounded-lg shadow-md bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold hover:from-blue-600 hover:to-purple-600 transition-colors duration-300 cursor-pointer "
+                            onclick="if(document.getElementById('email').checkValidity() && document.getElementById('password').checkValidity() && document.getElementById('newsletter').checked && 
+                                document.getElementById('length-check').classList.contains('text-green-600') &&
+                                document.getElementById('uppercase-check').classList.contains('text-green-600') &&
+                                document.getElementById('lowercase-check').classList.contains('text-green-600') &&
+                                document.getElementById('number-check').classList.contains('text-green-600') &&
+                                document.getElementById('special-check').classList.contains('text-green-600')
+                            ){ window.location.href='product.html'; }"
                         >
                             Submit
                         </button>
