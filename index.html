@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    
+  </head>
+  <body>
+    <!-- body  -->
+
+    <section>
+      <div class="flex items-center justify-center min-h-screen">
+        <div class="flex flex-col items-center gap-8">
+          <label for="email" class="text-lg font-medium text-gray-700 mb-1"
+            >Email</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="please enter your email"
+            class="w-96 h-10 rounded-lg shadow-md px-10 focus:outline-none"
+          />
+          <label for="password" class="text-lg font-medium text-gray-700 mb-1"
+            >Password</label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="please enter your password"
+            class="w-96 h-10 rounded-lg shadow-md px-10 focus:outline-none"
+          />
+
+          <div id="password-check" class="w-96 mt-2 text-sm flex flex-col gap-2">
+            <p id="length-check" class="text-gray-600">&#x2717; At least 8 characters</p>
+
+            <p id="uppercase-check" class="text-gray-600">
+              &#x2717; Contains an uppercase letter
+            </p>
+            <p id="lowercase-check" class="text-gray-600">
+              &#x2717; Contains a lowercase letter
+            </p>
+            <p id="number-check" class="text-gray-600">
+              &#x2717; Contains a number
+            </p>
+            <p id="special-check" class="text-gray-600">
+              &#x2717; Contains a special character (!@#$%^&*)
+            </p>
+          </div>
+
+          <button
+            class="w-1/2 h-10 rounded-lg shadow-md bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold hover:from-blue-600 hover:to-purple-600 transition-colors duration-300 cursor-pointer"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
